@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表</title>
+</head>
+<body>
+
+    <!-- 列表的分类：
+        有序列表，无序列表，自定义列表
+    -->
+
+    <!--【有序列表】 
+        ol
+        里面只能放li标签，但是li里面可以随意放标签
+        ol的属性：
+            type:取值有1,a,A,i,I —— 指定列表使用什么计数
+            start:取值只能是一个数字 —— 表示从哪一个开始计数
+     -->
+     <div style="background-color: aqua">
+
+        <ol type="a" start="1">
+            <li><strong>有序列表</strong></li>
+            <li>ol</li>
+            <li>里面只能放li标签</li>
+            <li>但是li里面可以随意放标签</li>
+        </ol>
+
+     </div>
+
+     <!--【无序列表】 
+        ul
+        快速创建：ul>li*n 创建ul和n个li
+        里面只能放li标签，但是li里面可以随意放标签
+        默认的是实心圆
+        ul的属性：
+            type:disc默认值 circle空心圆 square正方形 none没有（none用的很多）
+      -->
+     <div style="background-color: aquamarine">
+
+        <ul type="circle">
+            <li><strong>无序列表</strong></li>
+            <li>默认的是实心圆</li>
+            <li>type:disc默认值 circle空心圆 square正方形 none没有（none用的很多）</li>
+        </ul>
+
+     </div>
+
+     <!--【自定义列表】 
+        dl
+        多用于图文混合排列
+        快捷创建：dl>dt+dd
+        一般创建多个dl，对dl统一设置样式
+      -->
+     <div style="background-color: cadetblue">
+
+        <dl>
+            <dt>dt是图片</dt>
+            <dd>dd是文字</dd>
+        </dl>
+
+     </div>
+
+</body>
+</html>
