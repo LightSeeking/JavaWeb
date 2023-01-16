@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table表格的基本结构及属性</title>
+</head>
+<body>
+
+    <center>
+        <h1>表格的结构及其属性</h1>
+        <ul type="none">
+            <li>表格的结构</li>
+            <li>表格的属性</li>
+            <li>tr(行)的属性</li>
+            <li>td(单元格)的属性</li>
+            <li>表格的合并</li>
+        </ul>
+
+    </center> 
+
+    <!-- 【基本结构】
+        <table>   //创建表格 
+            <tr>    //tr表示行 
+                <td></td>   // td表示单元格 
+                <td></td>
+            </tr>
+        </table> 
+
+        PS:table里只能有tr，tr里只能有td，td里可以包含其他标签
+        快速创建：table>tr*n>td*m
+    -->
+
+    <!--【表格属性】 
+        width:宽度 //支持百分比，相对于父元素的百分比
+        height:高度 //高度也支持，只是body是0，有其间内容决定
+        border:边框
+        bordercolor:边框颜色
+        bgcolor:背景颜色
+        align:水平对齐 left right center
+        cellspacing:单元格与单元格之间的间距
+        cellpadding:单元格与内容之间的空隙
+     -->
+
+    <table border="1" width="50%" height="500" align="center">
+           <!-- 
+            bordercolor="red" bgcolor="pink"
+           cellspacing="0" cellpadding="100"
+         -->
+
+
+        <!--【tr的属性】 
+            height:高度
+            bgcolor:背景颜色
+            align:文字水平对齐  left right center 
+            valign:文字垂直对齐 top middle bottom
+         -->
+        <tr bgcolor="blue" height="200" align="center" valign="middle">
+
+
+            <!--【td的属性】 
+                width:宽度
+                height:高度
+                bgcolor:背景颜色
+                align:文字水平对齐  left right center 
+                valign:文字垂直对齐 top middle bottom
+
+                PS:设置宽度影响一列，设置高度影响一行
+             -->
+            <td width="200" height="300" bgcolor="yellow" align="right" valign="top">
+                1
+            </td>
+
+            <td>2</td>
+
+        </tr>
+
+        <tr>
+
+            <!--【表格的合并】 
+                colspan="所要合并的单元格列数" 必须给td  【横向】
+                rowspan="所要合并的单元格行数" 必须给td  【纵向】
+             -->
+            <td>3</td>
+            <td>4</td>
+
+        </tr>
+
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <!-- 表格合并演示 -->
+    <table border="1" width="50%" height="500" align="center">
+
+        <!--魏国吞并辽东，幽州，西凉
+            --只能横向或者纵向合并，不能形成L形
+            所以，魏国吞并辽东，西凉吞并幽州
+            魏国再吞并西凉 
+         -->
+        <tr align="center" valign="middle">
+            <td>不毛</td>
+            <td colspan="2" rowspan="2">魏国</td>
+            <!-- <td>辽东</td> -->
+        </tr>
+
+        <tr align="center" valign="middle">
+            <td>蜀国</td>
+            <!-- <td colspan="2">西凉</td> -->
+            <!-- <td>幽州</td> -->
+        </tr>
+
+        <tr align="center" valign="middle">
+            <td>南中</td>
+            <td>吴国</td>
+            <td>荆州</td>
+        </tr>
+    </table>
+
+</body>
+</html>

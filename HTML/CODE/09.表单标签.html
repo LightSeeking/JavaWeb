@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+
+    <!-- 
+        目的：收集信息
+
+        <form method="get或者post" action="向何处发送表单数据">
+            //method默认为get
+            <input type="text">
+                type:定义输入框的类型
+                    text:文本框
+                    password:密码框
+                    submit:提交框 和 <button>提交按钮</button>一样
+                    button:单纯的按钮
+                    reset:清空的效果
+                placeholder:描述输入字段预期值的简短的提示信息。兼容到IE8以上
+                name:必须设置，否则再提交表单时，用户在其中输入的数据不会被发送到服务器
+                value:自定义文本说明
+        </form> 
+    -->
+
+    <!--Form当中method中的post和get的区别
+        1.get是从服务器上获取数据，post的向服务器传送数据
+        2.get是把参数数据队列加到提交表单的ACTION属性所指的url中，
+            值和表单内各字段一一对应，在url中可以看到。
+          post是通过HTTP post机制，将表单内各字段与其内容放置在HTML HEADER
+            内一起传送到ACTION属性所指的url中，用户看不到这个过程
+        3.对于get方式，服务器端用Request.QueryString获取变量值，
+          对于post方式，服务器端采用Request.Form获取提交的数据
+        4.get传送的数据量较小，不能大于2KB。
+          post传送的数据量较大，一般被默认为不受限制。
+            但理论上，IIS5中最大量为80KB，ISS5中为100KB
+        5.get安全性非常低，post安全性较高，
+          但是get比post执行效率好
+     -->
+
+    <form action="" method="get">
+        用户信息：<input type="text" name="username" placeholder="请输入你的用户名">
+        <br>
+        密码：<input type="password" name="password" placeholder="请输入你的密码"> 
+        <br>
+        <button>登录</button>
+        <input type="reset">
+        <input type="submit" value="登录">
+
+    </form>
+    
+</body>
+</html>
