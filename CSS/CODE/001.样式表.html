@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式表</title>
+    <!--【样式表】 
+        分类：
+            内部样式表
+            外部样式表
+            行内样式表
+        优先级：
+            !important>行内>内部>外部
+               //!important加在谁身上，谁就最高
+            所以写的时候，先写外部，外部下面写内部//代码顺序会影响结果
+                最后写行内
+          PS:优先级争对的是同一标签同一属性
+     -->
+
+    <!-- 内部样式
+        ——缺点：修改不便
+     -->
+    <style>
+        h1{
+            color: rgb(206, 87, 109);
+        }
+
+        h2{
+            color: rgb(188, 132, 168) ;
+        }
+     </style>
+
+     <!--【外部样式引入方式】 
+        1.
+            <link rel="stylesheet" type="text/css" href="css文件的路径">
+                relation定义关联性，stylesheet 样式表
+        2.
+            <style type="text/css">
+                @import url("css文件的路径");
+            </style>
+     -->
+     <!-- link和import之间的区别：
+        差别1：本质的区别，link属于XHTML标签，而@import网完全是CSS提供的一种方式
+        差别2：加载顺序的差别，当一个页面被加载的时候，link引用的CSS会同时被加载，
+               而@import引用的CSS会等到页面完全被下载完再被加载。所以有时候浏览
+               @import加载CSS的页面时开始会没有样式（就是闪烁），网速越慢越明显。
+        差别3：兼容性的差别：@import是CSS2.1提出的，所以老的浏览器不支持
+               @import只有在IE5以上的才能识别，而link标签无此问题 
+    -->
+
+     <link rel="stylesheet" type="text/css" href="../cssSource/001.css">
+
+     <style type="text/css">
+        @import url("../cssSource/001.css");
+     </style>
+
+</head>
+<body>
+    
+    <!--【CSS语法】 
+        1.每个CSS样式由两部分组成，即选择符合声明，声明又分属性和属性值；
+        2.属性必须放在花括号中，属性与属性值用冒号连接
+        3.每条声明用分号结束
+        4.当一个属性有多个属性值时，属性值与属性值不分先后顺序，用空格隔开
+        5.在书写样式过程中，空格、换行等操作不影响属性显示
+     -->
+
+     <h1>内部样式表</h1>
+     <h2>效果展示</h2>
+     
+     <h3>外部样式表</h3>
+     <h4>效果展示</h4>
+
+     <h5 style="color: rgb(236, 188, 54);">行内样式表</h5>
+
+     <div style="color: rgb(254, 183, 229);"><strong>样式优先级</strong></div>
+</body>
+</html>

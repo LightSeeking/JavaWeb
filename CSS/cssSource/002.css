@@ -1,0 +1,48 @@
+/* 标签选择器 */
+div{
+    background-color:burlywood
+}
+ol{
+     background-color: hotpink;
+}
+
+/* class选择器/类选择器 */
+.ls{
+    background-color: aqua;
+}
+.ie{
+    background-color:aquamarine;
+}
+
+/* id选择器 */
+#text1{
+    background-color: blue;
+}
+#text2{
+    background-color: blueviolet;
+}
+
+/* 通配符选择器 */
+*{
+    margin:0;padding:0
+}
+
+
+/* 后代选择器 */
+div p{
+    background-color:gold;
+}
+
+/* 伪类选择器 */
+a:link{
+    color: yellow;
+}
+a:visited{
+    color: cadetblue;
+}
+a:hover{
+    color: darkkhaki;
+}
+a:active{
+    color: darkseagreen;
+}

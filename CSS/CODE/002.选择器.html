@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/002.css">
+
+    <!-- <style type="text/css">
+        @import url(../cssSource/002.css);
+    </style> -->
+</head>
+<body>
+    
+    <span>
+        <strong>【选择器】</strong> <br>
+        目的：实现对元素进行一对一，一对多或多对一的控制<br>
+        分类：<br>
+        <ol type="1">
+            <li>标签选择器</li>
+            <li>class选择器/类选择器</li>
+            <li>id选择器</li>
+            <li>通配符选择器</li>
+            <li>群组选择器</li>
+            <li>包含选择器/后代选择器</li>
+            <li>伪类选择器</li>
+        </ol>
+    </span>
+
+    <!--【元素选择符/类型选择符（element选择器）】 
+        语法：元素名称{属性:属性值;} 如div,h1,img,span,i,em,strong,b...等
+        说明：所有页面元素都可以作为选择符
+    -->
+      <div>元素选择符/类型选择符（element选择器）</div>
+      <hr>
+
+    <!--【类选择器】 
+        语法：.class名{属性:属性值;}
+        说明：使用前，需先为每个元素定义一个class名称
+        PS:一个标签可以有多个类名，用空格隔开即可
+            多个类名，无优先级，受style执行顺序影响
+    -->
+       <h1 class="ls">class选择器</h1>
+       <h1 class="ie">类选择器</h1>
+       <hr>
+    
+    <!--【id选择器】
+        语法：#id名{属性:属性值;}
+        说明：id名取英文，不可使用关键字
+        唯一性：一个id名称只能对应文档中一个具体的元素对象
+    -->
+     <h2 id="text1">id选择器</h2>
+     <h2 id="text2">#id名{属性:属性值;}</h2>
+     <hr>
+
+    <!--【通配符选择器】
+        语法：*{属性:属性值;}
+        说明：*就是代表所有元素
+        示例：*{margin:0;padding:0}
+            表示清除所有元素的默认边距值和填充值
+    -->
+    <h3>使用通配符选择器清除无序列表数据前空白</h3>
+    <ul>
+        <li>清除前面空白</li>
+        <li>使之与上述文字对齐</li>
+        <li>本文件中所有边距值都被清除,有序列表前的计数也会清除</li>
+    </ul>
+    <hr>
+
+    <!-- 【群组选择器】
+        语法：选择符1,选择符2,选择符3...{属性:属性值;}  //有逗号
+        说明：就是多选，可以通过不同的选择器
+        示例：#top1,#nav1,h1{width:960px;}
+    -->
+    <!--【包含选择器】 
+        语法：选择符1 选择符2{属性:属性值;}     //无逗号
+        说明：就是选择符1中包含的所有选择符2
+            当元素存在父级元素时，可以不另加选择符
+        示例：
+            <ul class="list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            .list{background:red;}
+        PS:选择时是从右到左，先找到所有的选择符2，再匹配父级元素
+     -->
+    <div>
+        <p>后代选择器</p>
+    </div>
+    <p>该文本无父级元素</p>
+    <hr>
+
+     <!--【伪类选择器】 
+        语法:
+            a:link{属性:属性值;} 超链接的初始状态
+            a:visited{属性:属性值;} 超链接被访问后的状态
+            a:hover{属性:属性值;} 鼠标悬停，即鼠标划过超链接时的状态
+            a:active{属性:属性值;} 超链接被激活时的状态，即鼠标按下时超链接的状态
+        link--visited--hover--active
+
+        说明：
+            当四个超链接伪类选择器同时使用时，注意顺序，正确的为
+                link--visited--hover--active，错误顺序可能会导
+                致样式失效
+            为了简化代码，可以把伪类选择器中相同的声明提出来放在
+                a选择符中
+      -->   
+    <a href="https://gitee.com/lightseeking/img_-source.git" target="_blank">
+        <strong>图片库</strong>
+    </a>
+</body>
+</html>
