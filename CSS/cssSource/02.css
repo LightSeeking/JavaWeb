@@ -1,0 +1,29 @@
+.title{
+    width: 260px;
+    height: 37px;
+    background-color: #f00;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(247, 235, 8);
+    /* 水平居中 */
+    text-align: center;
+    /* 垂直居中 */
+    line-height: 37px;
+}
+
+p{
+    width: 500px;
+    font-size: 18px;
+    /* 首行缩进 */
+    text-indent: 2em;
+    /* 两端对齐 */
+    text-align: justify;
+}
+
+.span1{
+    color: #f00;
+}
+
+.span2{
+    font-weight: 700;
+}

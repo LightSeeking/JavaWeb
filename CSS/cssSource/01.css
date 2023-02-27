@@ -1,0 +1,30 @@
+h1{
+    color: aquamarine;
+}
+
+.menu{
+    background-color: rgba(9, 7, 119, 0.949);
+}
+
+img{
+    max-width: 600px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.entries:hover{
+    background-color: red;
+}
+
+p{
+    color: rgb(74, 174, 245);
+}
+
+li a{
+    color: black;
+}

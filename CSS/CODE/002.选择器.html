@@ -27,7 +27,67 @@
             <li>包含选择器/后代选择器</li>
             <li>伪类选择器</li>
         </ol>
+        <h3>选择器的权重：</h3>
+        <h4>
+            当多个选择器，选中的是同一个元素，且都为他们定义了<br>
+            样式，如果属性发生了冲突，会选择权重高的来执行<br>
+        </h4>
+        <hr>
+
+        <table border="1" width="50%" height="500" align="center" cellspacing="0">
+            <tr id="tablehead" style="background-color: blue;">
+                <td style="width: 60px;">个数</td>
+                <td>选择器</td>
+                <td>权重，CSS中用4位数表示权重</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>类型/元素选择器</td>
+                <td>0001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>class选择器（类选择器）</td>
+                <td>0010</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>id选择器</td>
+                <td>0100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>包含选择器</td>
+                <td>为包含选择符的权重之后</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>内联样式</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>!important</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td class="vip" colspan="2"><u>CSS选择器解析规则1：</u></td>
+                <!-- <td></td> -->
+                <td class="vip">当不同选择符的样式设置有冲突的时候，高权重选择符的
+                    样式会覆盖低权重选择符的样式
+                </td>
+            </tr>
+            <tr>
+                <td  class="vip" colspan="2"><u>CSS选择器解析规则2：</u></td>
+                <!-- <td></td> -->
+                <td class="vip">相同权重的选择符，样式遵循就近原则：
+                    哪个选择符最后定义，就采用哪个选择符样式
+                </td>
+            </tr>
+        </table>
+
     </span>
+    <hr>
 
     <!--【元素选择符/类型选择符（element选择器）】 
         语法：元素名称{属性:属性值;} 如div,h1,img,span,i,em,strong,b...等

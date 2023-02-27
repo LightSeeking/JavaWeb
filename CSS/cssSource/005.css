@@ -1,0 +1,26 @@
+.box1 {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    /* 默认平铺效果，拿图片把盒子占满 */
+    background-image: url(../IMG/005.1.png);
+    background-repeat:no-repeat;
+
+    /* background-position: 20px,20px; */
+    background-position: right bottom;
+
+    /* cover:把图像等比缩放，可能无法完全显示图片
+       contain:等比，不大于边界
+    */
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.box2{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    background-image: url(../IMG/005.2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}

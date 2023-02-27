@@ -1,3 +1,12 @@
+/* 表格样式 */
+#tablehead td{
+    color: white;
+}
+
+.vip{
+    color: red;
+}
+
 /* 标签选择器 */
 div{
     background-color:burlywood

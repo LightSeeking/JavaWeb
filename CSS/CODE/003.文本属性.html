@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/003.css">
+</head>
+<body>
+
+    <a href="../CODE/004.列表属性.html">下一节：004.列表属性</a>
+
+    <h1><center>文本属性</center></h1>
+    
+    <table border="1" width="50%" height="500px" align="center" cellspacing="0">
+        <tr class="tablehead">
+            <td style="width: 60px;">个数</td>
+            <td style="width: 130px;">属性</td>
+            <td style="width: 100px;">描述</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>font-size</td>
+            <td>字体大小</td>
+            <td>单位时px，浏览器默认是16px，设计图常用字号是12px</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>font-family</td>
+            <td>字体</td>
+            <td>当字体是中文字体、英文字体中有空格时，需加引号；
+                多个字体中间用逗号连接，先解析第一个字体，如果
+                没有解析第二个字体，以此类推
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>color</td>
+            <td>颜色</td>
+            <td>color:red; color:#ff0; color:rgb(255,0,0); 0-255</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>font-weight</td>
+            <td>加粗</td>
+            <td>font-weight:bolder(更粗的)/bold(加粗)/normal(常规)
+                font-weight:100-900; 100-500不加粗，600-900加粗
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>font-style</td>
+            <td>斜体</td>
+            <td>font-style:italic(斜体字)/oblique(倾斜的文字)/normal(常规显示)</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>text-align</td>
+            <td>文本水平对齐</td>
+            <td>text-align:left(水平靠左)/right(水平靠右)/
+                center(水平居中)/justify(水平两端对齐，但是只对多行起作用)
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>line-height</td>
+            <td>行高</td>
+            <td>line-height的数据=height的数据，可以实现单行文本垂直居中
+                不推荐多行文本使用
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>text-indent</td>
+            <td>首行缩进</td>
+            <td>text-indent可以取负值；<span class="sp">text-indent属性只对第一行起作用</span></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>letter-spacing</td>
+            <td>字间距</td>
+            <td>控制文字与文字之间的间距
+                letter-spacing控制中文，<span class="sp">word-spacing控制英文</span>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>text-decoration</td>
+            <td>文本修饰</td>
+            <td>text-decoration:none(没有)/underline(下划线)
+                overline(上划线)/line-through(删除线)
+                <span class="sp">可以设置多个线，直接使用空格分开就行</span>
+            </td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>font</td>
+            <td>文字简写</td>
+            <td>font是font-style font-weight font-size/
+                line-height font-family的简写。
+                font:italic 800 30px/80px "宋体";顺序不能改变，
+                <span class="sp">必须同时指定font-size和font-family属性时才能生效</span><br>
+                <span class="sp">PS:顺序为斜体，加粗，大小/缩进 字体;</spa>
+            </td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>text-transform</td>
+            <td>大小写</td>
+            <td>text-transform: capitalize(首字母全部大小)/lowercase(全部小写)/
+                uppercase(全部大写)/none(无任何效果)
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>示例</h2>
+    <p class="p1">
+        字体大小和字体类型<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Eaque officiis quo assumenda pariatur culpa neque harum 
+         sunt! Fuga magni minus fugit optio debitis dolorum reiciendis 
+         ratione tempora fugiat, animi nostrum!
+    </p>
+
+    <p class="p2">
+        字体颜色<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Dolore doloremque id illum molestias possimus asperiores 
+        numquam dolorum pariatur. Molestiae aliquam quo maiores 
+        similique suscipit corrupti, incidunt officia reprehenderit 
+        est consequuntur.
+    </p>
+
+    <p class="p3">
+        加粗和倾斜<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Suscipit laudantium recusandae maxime possimus vitae? Ex 
+        voluptatum molestiae modi doloribus. Facere est, eos nam 
+        corrupti nulla iusto. Fugit eos a esse?
+    </p>
+
+    <p class="p4">
+        文字水平对齐<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Laudantium aperiam tempore cumque iure repellendus soluta 
+        consequuntur recusandae, deleniti enim ipsam ad maiores 
+        repudiandae suscipit temporibus illo aspernatur nesciunt 
+        sed tenetur.
+    </p>
+
+    <p class="p5">
+        优化行高，避免文字过于密集
+    </p>
+
+    <p class="p6">
+        字符间距和首行缩进<br>
+        金虎辞旧岁，玉兔迎新春。在癸卯春节即将来临之际，习近平总书记1月18日
+        上午在首都北京采取视频连线方式，亲切看望慰问全国6个地方基层干部群众，
+        向大家致以新春的美好祝福，向各行各业干部群众送去党中央的关心和温暖。
+        防疫一线的医务人员、福利院的老年朋友、能源保供企业的员工、高铁站的干
+        部职工、农产品批发市场的商户和群众、乡村基层的干部群众……大家聆听着总
+        书记殷切的嘱托、美好的祝福，倍感振奋、深受鼓舞。
+        新华社记者回访了同总书记视频连线的基层干部群众，深深感受到总书记的心
+        同全国各族人民的心紧紧相连。总书记的深切关怀、深情厚望，温暖着每一位
+        逐梦前行的中华儿女。
+    </p>
+
+    <p class="p7">
+        词间距<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nihil dolor ab perspiciatis itaque est voluptatem minima 
+        mollitia dignissimos expedita voluptates rerum, numquam 
+        corrupti consequatur placeat vero cupiditate? Neque, 
+        laudantium perspiciatis.
+    </p>
+
+    <p class="p8">
+        文本修饰线<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Maxime repudiandae nulla, sint dolorum quaerat iure debitis 
+        suscipit ducimus distinctio perspiciatis. Aliquam sequi quod 
+        voluptates unde beatae ipsam ducimus alias explicabo.
+    </p>
+
+    <p class="p9">
+        字母大小写<br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Adipisci, quidem natus molestiae unde ipsam in ea esse, 
+        architecto sequi iste incidunt aperiam error vitae vel 
+        tempora non, facilis reiciendis iure.
+    </p>
+
+    <p class="p10">
+        font简写<br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Quasi ducimus quisquam a asperiores earum sapiente molestias 
+        optio magnam veritatis, incidunt molestiae quaerat magni 
+        cumque vel deleniti cum similique fugit nihil!
+    </p>
+</body>
+</html>

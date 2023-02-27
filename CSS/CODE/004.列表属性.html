@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表属性</title>
+
+    <style>
+        ul{
+            list-style-type: none;   
+        }
+
+        li{
+            border: 1px solid red;
+            list-style-position: inside;
+        }
+
+        .li1{
+            list-style-image: url(../IMG/004.1.png);
+        }
+        .li2{
+            list-style-image: url(../IMG/004.2.png);
+        }
+        .li3{
+            list-style-image: url(../IMG/004.3.png);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../CODE/005.背景属性.html">下一节：背景属性</a>
+    
+    <!-- 【列表属性】
+        1.list-style-type:定义列表符号样式
+            disc实心圆、circle空心圆、square实心方块、none去掉符号
+        2.list-style-image:将图片设置为列表符号样式
+            url()
+        3.list-style-position:设置列表项标记的放置位置
+            outside列表的外面，默认值、inside列表的里面
+        4.list-style:简写【最常用】属性顺序可以随便
+            none去掉列表符号
+     -->
+
+     <ul>
+        <li class="li1">列表属性</li>
+        <li class="li2">符号样式</li>
+        <li class="li3">符号位置</li>
+     </ul>
+</body>
+</html>

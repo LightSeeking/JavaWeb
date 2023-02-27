@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/005.css">
+</head>
+<body>
+
+    <table border="1" width="50%" height="500px" align="center" cellspacing="0">
+        <tr>
+            <td>个数</td>
+            <td>属性</td>
+            <td>描述</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>background-color</td>
+            <td>背景颜色</td>
+            <td>background-color:red;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>background-image</td>
+            <td>背景图片</td>
+            <td>background-image:url();</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>background-repeat</td>
+            <td>背景图片的平铺</td>
+            <td>background-repeat:no-repeat/repeat（默认）
+                /repeat-x（铺满x轴）/repeat-y;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>background-position</td>
+            <td>背景图片的定位</td>
+            <td>background-position:水平位置 垂直位置;可以给负值</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>background-attachment</td>
+            <td>背景图片的固定</td>
+            <td>background-attachment:scroll(滚动)/fixed(固定，固定在浏览器窗口里面，固定之后
+                就相当于浏览器窗口了);</td>
+        </tr>
+        <tr>
+            <td colspan="4">可以简写成background</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <center>
+        <h2>案例</h2>
+    </center>
+
+    <p>小图大背景，不平铺</p>
+    <div class="box1"></div>
+    <hr>
+    <p>大图小背景，设置位置</p>
+    <div class="box2"></div>
+    <hr>
+</body>
+</html>

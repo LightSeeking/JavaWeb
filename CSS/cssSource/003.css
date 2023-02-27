@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(242,202,201);
+}
+
+.tablehead{
+    background-color: rgb(50, 132, 233);
+}
+
+.sp{
+    color: red;
+}
+
+.p1{
+    font-size: 20px;
+    font-family: 宋体;
+}
+
+.p2{
+    color: rgb(38, 198, 230);
+}
+
+.p3{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.p4{
+    background-color: #efafad;
+    width: 40%;
+    /* 两端对齐，更美观 */
+    text-align:justify;
+}
+
+.p5{
+    background-color: #f17666;
+    height: 80px;
+    line-height: 80px;
+}
+
+.p6{
+    letter-spacing: 3px;
+    text-indent: 2em;
+}
+
+.p7{
+    word-spacing: 10px;
+}
+
+.p8{
+    text-decoration: underline;
+}
+
+.p9{
+    text-transform: capitalize;
+}
+
+.p10{
+    font: italic bold 20px/1em 宋体;
+}
+
