@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/008.css">
+</head>
+
+<body>
+
+    <p>一、内边距——padding</p>
+    <ul>
+        <li>一个值，四个方向边距一样</li>
+        <li>两个值，就是上下，左右</li>
+        <li>三个值，就是上，左右，下</li>
+        <li>四个值，就是上，右，下，左</li>
+        <li>背景色蔓延到内边距</li>
+        <li>
+            <em>padding-top,padding-left,padding-right,padding-bottom </em>
+            用于分别设置单一方向的内边距
+        </li>
+    </ul>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        At minima quia, animi veniam distinctio corporis similique
+        iusto officiis iure delectus, nemo molestias ducimus rem
+        architecto sint! Inventore voluptas quod sunt.
+    </div>
+    <hr>
+
+    <p>二、边框——border</p>
+    <ul>
+        <li>border:边框粗细 样式 颜色;</li>
+        <li>样式：solid-实线，double-双实线，dashed-线段线，dotted-点状线</li>
+        <li>背景色蔓延到边框</li>
+        <li>
+            <em>border-top,border-left,border-right,border-bottom </em>
+            用于分别设置单一方向的边框
+        </li>
+        <li>
+            border是一个复合属性，可以拆分为：
+            <em>border-width,border-style,border-color</em>
+            PS:上述三个独立属性都可以分别设置四个方向，类似于内边距
+        </li>
+    </ul>
+
+    <div class="box2"></div>
+    <hr>
+
+    <p>三、外边距——margin</p>
+    <h3>1.外边距的基本属性</h3>
+    <ul>
+        <li>margin和padding一样，也可以独立设置四个方向</li>
+        <li>
+            <em>margin-top,margin-left,margin-right,margin-bottom </em>
+            用于分别设置单一方向的外边距
+        </li>
+        <li>背景色不会蔓延！！！</li>
+        <li>一般会使用*{margin:0;}来清除所有边距，用来重新设置</li>
+        <li>PS:margin可以取负值的！！！</li>
+    </ul>
+
+    <div class="box4">
+        <h3>2.屏幕居中的方法</h3>
+        <ul>
+            <li>margin:0 auto;可以实现横向居中</li>
+        </ul>
+    </div>
+    <div class="box5"></div>
+
+    <h3>3.外边距特性</h3>
+    <ol>
+        <li>兄弟关系，两个盒子垂直外边距与水平外边距问题: <br>
+            &emsp;垂直方向，外边距取最大值<br>
+            &emsp;水平方向，外边距会进行合并处理
+        </li>
+        <li>父子关系，给子加外边距，但作用于父身上了，怎么解决？<br>
+            <ol type="i">
+                <li>子的margin-top===>父的padding-top,不过注意父盒子高度变动</li>
+                <li>给父盒子设置一个边框即可</li>
+                <li>让子盒子或者父盒子加浮动</li>
+                <li>父盒子加一个overflow:hidden;即可</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <div class="box3" id="db31"></div>
+    <div class="box3" id="db32"></div>
+>
+
+    <h5>兄弟关系：</h5>
+    <div class="box6" id="db61"></div>
+    <div class="box6" id="db62"></div>
+    <div class="box6" id="db63"></div>
+
+    <!-- 使用lock清浮动来分隔 -->
+    <div class="lock"></div>
+
+    <h5>父子关系：</h5>    
+    <!-- 使用hr来显示边距 -->
+    <hr width="300px" align="left">
+    <div class="box7">
+        <div class="box6" id="db64"></div>
+    </div>
+    
+    
+</body>
+
+</html>

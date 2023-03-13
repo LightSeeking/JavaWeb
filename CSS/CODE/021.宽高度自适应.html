@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宽高自适应</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/021.css">
+</head>
+<body>
+
+    <div class="intro">
+        <div class="title">
+            自适应
+        </div>
+        <p>
+            网页布局中经常要定义元素的宽和高。但很多时候我们希望元素能够自己
+            根据窗口或者子元素自动调整，这就是自适。
+        </p>
+        
+        <div class="title">
+            宽度自适应高度自适应
+        </div>
+
+        <ul>
+            <li>（1）宽度自适应</li>
+            <li>元素宽度的默认值为auto</li>
+            <li>宽度不写或者写成auto就是自适应了</li>
+            <li><span>多使用于导航栏，通栏布局</span></li>
+            <li>（2）高度自适应</li>
+            <li>元素高度的默认值{height:auto;}</li>
+            <li>设置自适应，如果内容过少，会导致上下两个模块贴合过近，
+                不美观，可以设置最小高度min-height；
+            </li>
+            <li>（3）拓展</li>
+            <li>min-height;min-width;max-height;max-width</li>
+        </ul>
+
+    </div>
+
+    <hr>
+    <h3>高度自适应测试</h3>
+    <div class="header"></div>
+    <div class="body">
+        设置了高度自适应，根据内容多少来显示
+    </div>
+    <div class="footer"></div>
+
+    
+</body>
+</html>

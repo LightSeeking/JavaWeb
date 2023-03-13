@@ -1,0 +1,53 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background:#c3d7df;
+    position: relative;
+}
+
+p{
+    font-size: 18px;
+    font-family: STXingKai;
+    color: rgb(116, 183, 243);
+}
+
+.kid{
+    width: 100px;
+    height: 100px;
+    background: #f4c7ba;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: -1;
+}
+
+.sep{
+    width:200px;
+    height:200px;
+}
+
+
+.brother1{
+    width: 200px;
+    height: 200px;
+    background: #c3d7df;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    z-index: 1;
+}
+
+.brother2{
+    width: 200px;
+    height: 200px;
+    background: #f4c7ba;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+
+ol li{
+    font-size: 16px;
+    color: red;
+}

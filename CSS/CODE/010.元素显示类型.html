@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示类型</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/010.css">
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="head">
+            <p>元素类型的分类，依据CSS的显示</p>
+        </div>
+
+        <div class="left">
+            <div class="title"><p>块元素(block element)</p></div>
+            <div class="main">
+                <ul type="none">
+                    <li>A)块级元素在网页中就是以块的形式显示，所谓
+                        块状就是元素显示为矩形区域
+                    </li>
+                    <li>B)默认情况下，块级元素都会占据一行；默认情况
+                        下，块级元素会按顺序自上而下排列
+                    </li>
+                    <li>C)块级元素都可以定义自己的宽度和高度</li>
+                    <li>D)块级元素一般都作为其他元素的容器，它可以
+                        容纳其他内联元素和其他块级元素，我们把这种
+                        容器比喻成一个盒子
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="title"><p>行内（内联）元素</p></div>
+            <div class="main">
+                <ul type="none">
+                    <li>A)内联元素的表现形式是始终以行内
+                        住诸葛进行显示；横着排
+                    </li>
+                    <li>B)内联元素没有自己的形状，不能定义它的宽和高，
+                        它显示的宽度，高度只能根据所包含内容的高度和
+                        宽度来确定，它最小内容单元也会呈现矩形形状
+                    </li>
+                    <li>C)内联元素也会遵循盒模型基本规则，但是对于margin
+                        和padding个别属性值不生效
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="title"><p>行内块元素</p></div>
+            <div class="main">
+                <ul type="none">
+                    <li>内联块状元素(inlin-block)就是同时具备
+                        内联元素、块状元素的特点
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case">
+            <div class="left">
+                <p>例如:div p ul li il li dl dt dd h1-h6等</p>
+            </div>
+            <div class="center">
+                <p>例如:a b em i span strong等</p>
+            </div>
+            <div class="right">
+                <p>例如:img input等</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="care">
+            <ul type="none">
+                <li style="color: red;">
+                    1.块元素
+                </li>
+                <li>display:block;</li>
+                <li>display:list-item;</li>
+                <li>p里面一般只放文本，不放其他标签</li>
+
+            </ul>
+    
+            <ul type="none">
+                <li style="color: red;">2.行内元素</li>
+                <li>display:inline;</li>
+                <li>可以设置左右边距，上下无效</li>
+            </ul>
+    
+            <ul type="none">
+                <li style="color: red;">3.行内块元素</li>
+                <li>display:inline-block;</li>
+            </ul>
+            
+            <ul type="none">
+                <li style="color: red;">4.元素类型互相转换</li>
+                <li>不同类型元素之间是有间距的，故可以转换来消除间距</li>
+                <li>使用：display:block/inline/inline-block/none;</li>
+                <li>display:none;实现隐藏效果</li>
+            </ul>
+    </div>
+
+
+    
+
+
+    
+</body>
+</html>

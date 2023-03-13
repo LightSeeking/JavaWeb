@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增强表单-数据列表</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../cssSource/031.css">
+</head>
+<body>
+
+    <div class="infro">
+
+        <h3>Datalist:选项列表</h3>
+        <pre>
+例：&lt;input type="url" list="url_list" name="link"/&gt;
+&lt;datalist id="url_list"&gt;
+  &lt;option lable="W3School" value="http://www.W3School.com.cn"/&gt;
+  &lt;option lable="Google" value="http://www.google.com"/&gt;
+  &lt;option lable="Microsoft" value="http://www.microsoft.com"/&gt;
+&lt;/datalist&gt;
+        </pre>
+        <p>提示：option元素永远要设置value属性</p>
+    </div>
+    
+    <div class="case">
+        <input type="text" list="list" name="" id="">
+
+        <datalist id="list">
+            <option value="手机"></option>
+            <option value="手表"></option>
+            <option value="手环"></option>
+            <option value="手镯"></option>
+        </datalist>
+    
+    </div>
+</body>
+</html>

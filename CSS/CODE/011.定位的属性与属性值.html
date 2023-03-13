@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的属性与属性值</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/011.css">
+</head>
+<body>
+
+    <div class="box">
+       
+        <div class="header">
+            定位-position
+        </div>
+
+        <div class="num conwidth1">
+            <ul>
+                <li class="conwidth1 conheight1 title end">个数</li>
+                <li class="conwidth1 conheight2 end">1</li>
+                <li class="conwidth1 conheight3 end">2</li>
+                <li class="conwidth1 conheight2 end">3</li>
+                <li class="conwidth1 conheight2 end">4</li>
+            </ul>
+        </div>
+
+        <div class="write conwidth2">
+            <ul>
+                <li class="conwidth2 conheight1 title end">书写语法</li>
+                <li class="conwidth2 conheight2 end">position:static;</li>
+                <li class="conwidth2 conheight3 end">position:absolute;</li>
+                <li class="conwidth2 conheight2 end">position:relative;</li>
+                <li class="conwidth2 conheight2 end">position:fixed;</li>
+            </ul>
+        </div>
+
+        <div class="rubric conwidth3">
+            <ul>
+                <li class="conwidth3 conheight1 title end">说明</li>
+                <li class="conwidth3 conheight2 end">默认值</li>
+                <li class="conwidth3 conheight3 end">绝对定位</li>
+                <li class="conwidth3 conheight2 end">相对定位</li>
+                <li class="conwidth3 conheight2 end">固定定位</li>
+            </ul>
+        </div>
+
+        <div class="stream conwidth4">
+            <ul>
+                <li class="conwidth4 conheight1 title end">文档流</li>
+                <li class="conwidth4 conheight2 end">默认</li>
+                <li class="conwidth4 conheight3 end">脱离</li>
+                <li class="conwidth4 conheight2 end">不脱离</li>
+                <li class="conwidth4 conheight2 end">脱离</li>
+            </ul>
+        </div>
+
+        <div class="diff conwidth5">
+            <ul>
+                <li class="conwidth5 conheight1 title end">偏移位置（top left right bottom）时候的参照物</li>
+                <li class="conwidth5 conheight2 end">默认</li>
+                <li class="conwidth5 conheight3 end">A)当没有父元素或者父元素没有定位，参照物是浏览器窗口的第一屏
+                    B)有父元素且父元素有定位，父元素
+                </li>
+                <li class="conwidth5 conheight2 end">自己的初始位置</li>
+                <li class="conwidth5 conheight2 end">浏览器的当前窗口</li>
+            </ul>
+        </div>
+
+        <div class="order">
+
+            <ul>
+                <li class="title end">层叠顺序（z-index）</li>
+                <li class="main end">z-index属性是不带单位的，并且可以给负值，没有设置z-index
+                    时，最后写的对象优先显示在上层，设置后，数值越大，层越靠上；
+                </li>
+            </ul>
+        </div>
+
+        <div class="conheight2 last">
+            <ul>
+                <li class="conwidth1 conheight2">5</li>
+                <li class="conwidth2 conheight2">position:sticky;</li>
+                <li class="conwidth3 conheight2">粘性定位</li>
+                <li class="add conheight2">可以左吸顶效果，粘性定位时css3.0新增的，兼容性不好</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增强表单</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../cssSource/030.css">
+</head>
+<body>
+
+    <div class="infro">
+
+        <h3>一、H5新增input类型</h3>
+        <ul>
+            <li>Type="color" 生成一个颜色选择的表单</li>
+            <li>Type="tel" 唤起拨号盘表单</li>
+            <li>Type="search" 产生一个搜索意义的表单</li>
+            <li>Type="range" 产生一个滑动条表单</li>
+            <li>Type="number" 产生一个数值表单</li>
+            <li>Type="email" 限制用户必须输入email类型</li>
+            <li>Type="url" 限制用户必须输入url类型</li>
+            <li>Type="date" 限制用户必须输入日期</li>
+            <li>Type="month" 限制用户必须输入月类型</li>
+            <li>Type="week" 限制用户必须输入周类型</li>
+            <li>Type="time" 限制用户必须输入时间类型</li>
+            <li>Type="daetime-local" 选取本地时间</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div class="case">
+        <h3>二、新增input类型演示</h3>
+
+        <div>
+            <p>1.颜色选择-把用户选取的颜色传给后端</p>
+            <form action="">
+                <input type="color" name="color">
+                <input type="submit">
+            </form>
+        </div>
+
+        
+        <div>
+            <p>2.邮箱</p>
+            <form action="">
+                <input type="email" name="email">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p>3.url地址</p>
+            <form action="">
+                <input type="url" name="url">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p>4.电话号码-适用于手机端</p>
+            <form action="">
+                <input type="tel" name="tel">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p class="stress">5.滑块效果-使用min和max设置最小/大值，
+                value设置初始值,step设置滑动最小变化值</p>
+            <form action="">
+                <input type="range" name="range" min="100" max="200" value="100" step="10">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p>6.数字类型-同上，可以设置最大/小值，初始值，步长</p>
+            <form action="">
+                <input type="number" name="number" max="20" min="10" value="10" step="2">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p>7.搜索</p>
+            <form action="">
+                <input type="search" name="search">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div>
+            <p>8.日期选择</p>
+            <form action="">
+                <input type="date" name="date">
+                <p>9.月份选择</p>
+                <input type="month" name="month">
+                <p>10.周数选择</p>
+                <input type="week" name="week">
+                <p>11.时间选择</p>
+                <input type="datetime-local" name="time">
+                <input type="submit">
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

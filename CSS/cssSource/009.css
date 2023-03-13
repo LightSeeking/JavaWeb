@@ -1,0 +1,51 @@
+h3{
+    color: crimson;
+}
+
+.title{
+    width: max-content;
+    border-bottom: 3px solid black;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    float: left;
+    margin-right: 10px;
+}
+
+#db1{
+    overflow: visible;
+}
+
+#db2{
+    overflow: hidden;
+}
+
+#db3{
+    overflow: scroll;
+}
+
+#db4{
+    overflow: auto;
+}
+
+#db5{
+    overflow: inherit;
+}
+
+#db6{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.rest{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    /* 实现过长内容，使用三个点代替 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

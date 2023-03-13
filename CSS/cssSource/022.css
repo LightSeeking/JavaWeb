@@ -1,0 +1,49 @@
+
+.infro ul .stress{
+    font-weight: bolder;
+}
+
+.infro ul li pre{
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-family: Microsoft YaHei;
+}
+
+/* 解决父盒子的高度塌陷问题 */
+/* .box{ */
+    /* 1.如果浮动过多，换行，就出现问题 */
+    /* height: 100px; */
+
+    /* 2.文字也会被隐藏 */
+    /* overflow: hidden; */
+/* }  */
+
+.box::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.left,.right{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.left{
+    background-color: #ec9bad;
+}
+
+.right{
+    background-color: #93b5cf;
+}
+
+
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: #f9cb8b;
+}
+

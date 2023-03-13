@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+
+    width: 1400px;
+    height: 340px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.con{
+    width: 391px;
+    height: 220px;
+    margin-right: 9px;
+    float: left;
+}
+
+.box1{
+    background: url(../IMG/10.1.jpg) no-repeat;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+
+.box2{
+    background: url(../IMG/10.2.jpg) no-repeat;
+    border: 5px solid silver;
+    position: relative;
+    left: 40px;
+    top: 20px;
+
+}
+
+.box3{
+    background: url(../IMG/10.3.jpg) no-repeat;
+    position: relative;
+    left: 40px;
+    top:20px;
+}
+
+.inpic{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.under{
+    display: none;
+}
+
+p{
+    display: none;;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: STXingKai;
+}
+
+.con:hover p{
+    display: block;
+}
+
+.con:hover .under{
+    display: inline-block;
+}
+
+.con:hover .inpic{
+    opacity: 0.5;
+}
+

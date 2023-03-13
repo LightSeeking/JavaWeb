@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conwidth1{
+    width: 40px;
+}
+
+.conwidth2{
+    width: 140px;
+}
+
+.conwidth3{
+    width: 80px;
+}
+
+.conwidth4{
+    width: 60px;
+}
+
+.conwidth5{
+    width: 220px;
+}
+
+.conheight1{
+    height: 40px;
+}
+
+.conheight2{
+    height: 70px;
+}
+
+.conheight3{
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+.box{
+    width: 667px;
+    height: 405px;
+    margin: 30px auto;
+}
+
+.header{
+    width: 665px;
+    height: 50px;
+    background-color: deepskyblue;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px dashed white;
+}
+
+
+.num,.write,.rubric,.stream,.diff{
+    float: left;
+    height: 355px;
+    border-right: 1px dashed silver;
+}
+
+
+div ul .title{
+    background-color: deepskyblue;
+    color: white;
+}
+
+.num ul,.order ul{
+    border-left: 1px dashed silver;
+}
+
+div ul .end{
+    border-bottom: 1px dashed silver;
+}
+
+.order{
+    width: 120px;
+    height: 350px;
+    float: left;
+    border-right: 1px dashed silver;
+}
+
+.order ul .title{
+    width: 120px;
+    height: 40px;
+}
+
+.order ul .main{
+    width: 120px;
+    height: 313px;
+    text-align: center;
+}
+
+.last{
+    clear: left;
+    width: 665px;
+}
+.last li{
+    float: left;
+} 
+.last .add{
+    width: 200px;
+}
+
+
+
+

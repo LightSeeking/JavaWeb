@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+
+    width: auto;
+    height: 400px;
+    background: antiquewhite;
+}
+
+.intro .title{
+    height: 40px;
+    line-height: 40px;
+    background: rgb(5, 159, 62);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+p{
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+}
+
+.intro ul li span{
+    color: red;
+}
+
+.header,.footer{
+    width: 100%;
+    height: 50px;
+    background-color: bisque;
+}
+
+.body{
+    /* height: auto; */
+    min-height: 300px;
+    background-color: cadetblue;
+}

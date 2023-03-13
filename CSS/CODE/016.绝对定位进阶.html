@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位的深入探索</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/016.css">
+</head>
+<body>
+    
+    <div class="box">
+        <p>通过设置子盒子的z-index为负数，来将父盒子显示在最前面</p>
+        <div class="kid"></div>
+    </div>
+
+    <div class="sep"></div>
+    
+    <div class="brother1"><p>兄弟关系，设置z-index值就可控制覆盖</p></div>
+    <div class="brother2"></div>
+
+    <div class="sep"></div>
+
+    <p>行内元素转块元素的方法:</p>
+    <ol>
+        <li>display:block;</li>
+        <li>position:absolute;</li>
+        <li>float:left;</li>
+    </ol>
+
+</body>
+</html>

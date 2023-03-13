@@ -1,0 +1,34 @@
+
+html,body{
+    height: 100%;
+}
+
+.header,.footer{
+    width: 100%;
+    height: 100px;
+    background: cornflowerblue;
+}
+.body{
+    width: 100%;
+    height: calc(100% - 200px);
+}
+
+.body div{
+    float: left;
+}
+
+.left,.right{
+    width: 200px;
+    height: 100%;
+    background: #93d5dc;
+}
+
+.center{
+    width: calc(100% - 400px);
+    height: 100%;
+    background: #92b3a5;
+}
+
+.footer{
+    background: darkgrey;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动属性</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/007.css">
+</head>
+<body>
+    
+    <!--
+        属性：
+            float:left; 元素靠左边浮动
+            float:right; 元素靠右边浮动
+            float:none; 元素不浮动
+        浮动的作用：
+            定义网页中其他文本如何环绕该元素显示
+            让竖着的东西横着来
+    -->
+    <!-- 
+        都浮动的话，就会一行一行填
+        文字不会被覆盖住
+     -->
+    <div class="box1"></div>
+    <div class="box2">带文字的浮动属性</div>
+    <div class="box3"></div>
+
+    <hr>
+
+    <center>
+        <p>高度塌陷：<br>
+            浮动的div高度为0；后面的div补上去<br>
+        </p>
+    </center>
+
+    <!--解决高度塌陷：
+        1.写固定高度，把包含浮动div的父盒子高度固定
+        2.清浮动方案//由后续模块解决
+        3.自己清，当前浮动元素后面补一个盒子，
+            不设置宽高，clear:both;
+        4.在装由浮动div的盒子中，设置
+            overflow:hidden;
+
+     -->
+     <!--clear
+        clear:none; 允许有浮动对象
+        clear:right;    不允许右边有浮动对象
+        clear:left; 不允许左边有浮动对象
+        clear:both; 不允许有浮动对象
+        清除浮动只是改变元素的排列方式，该元素还是漂浮着，
+        不占据文档位置 
+
+      -->
+
+    <!-- <div class="container"> -->
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <!-- <div style="clear:left"></div>
+        </div> -->
+    <div class="box6"></div>
+    
+</body>
+</html>

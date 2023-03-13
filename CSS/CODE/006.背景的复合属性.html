@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景的复合属性</title>
+
+    <style>
+        /*复合写法：
+            1.用空格隔开
+            2.顺序可以换
+            3.可以只取一个值，放在后面的能覆盖前面的
+        */
+        div{
+            width: 600px;
+            height: 600px;
+            /* background-color: aqua;
+            background-image: url(../IMG/04.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; */
+
+            background: aqua url(../IMG/04.jpg) no-repeat center fixed;
+
+            /* background-color: rgb(215, 8, 105);
+            background: url(../IMG/005.2.png) no-repeat; 这里没设颜色，会覆盖之前设置的颜色，即不会合并，只会覆盖
+            */
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+
+</body>
+</html>

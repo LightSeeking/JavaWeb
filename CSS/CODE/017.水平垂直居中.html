@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平垂直居中</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/017.css">
+</head>
+<body>
+    
+    <h3>1.在整个屏幕中间</h3>
+
+    <div class="box1">
+        <p>使用坐标轴，按百分比，再使用相对定位，调整至中心在中间</p>
+        <pre>
+            position: absolute;
+            top:50%;
+            left: 50%;
+            /*再平移盒子一半距离，
+            使中心居中*/
+            margin-left: -100px;
+            margin-top: -100px;
+        </pre>
+    </div>
+
+    <h3>2.在某个盒子的正中间</h3>
+
+    <div class="box2">
+        <div class="kid">
+            <p>和在整个屏幕居中一样，只不过参考的距离是父盒子</p>
+        </div>
+    </div>
+
+</body>
+</html>

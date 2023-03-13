@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单进阶</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../cssSource/026.1.css">
+
+</head>
+<body>
+
+    <div class="infro">
+
+        <h3>一、单选框</h3>
+        <ul>
+            <li>
+                &lt;input type="radio"&gt;
+            </li>
+
+            <li class="stress">
+                name的值用于分组，同一组只能选一个
+            </li>
+
+            <li>
+                使用<span>lable</span>标签，存储文本，为单选框提供文本，使用<span>id关联</span>
+            </li>
+
+            <li>
+                input里面的checked属性，提供默认勾选,<span>属性和值一样，可以省略不写</span>
+            </li>
+            <li>
+                <pre>
+示例：
+&lt;input type="radio" name="a" id="first" checked="checked"&gt;
+&lt;label for="first"&gt;单选框&lt;/label&gt;
+                </pre>
+            </li>
+        </ul>
+
+        <h3>二、复选框（多选）</h3>
+        <ul>
+            <li>&lt;input type="checkbox"&gt;</li>
+            <li>name用于js数据传输</li>
+            <li>其他类单选框</li>
+            <li>多选框的默认选择checked可以有多个</li>
+            <li>
+示例：
+&lt;input type="checkbox" name="b" id="cb1" checked&gt;
+&lt;label for="cb1"&gt;复选框&lt;/label&gt;
+            </li>
+        </ul>
+
+        <h3>三、上传文件和隐藏字段</h3>
+        <ul>
+            <li>(1)&lt;input type="file"&gt;</li>
+            <li>(2)&lt;input type="image" src=""&gt;就是一个图片样式的提交按钮</li>
+            <li class="stress">PS:提交等要建立在form表单中</li>
+            <li>(3)&lt;input type="hidden " value=""&gt;隐藏按钮</li>
+            <li><span>隐藏按钮是为了给后端看的，value就是给后端的数据</span></li>
+            <li>disabled属性可以禁用组件，readonly是只读属性</li>
+        </ul>
+
+    </div>
+
+    <div class="radio">
+        <p>1.单选框测试：</p>
+        <div>
+            <input type="radio" name="a" id="first" checked="checked">
+            <label for="first">单选框</label>
+        </div>
+
+        <div>
+            <input type="radio" name="a" id="second">
+            <label for="second">radio</label>
+        </div>
+
+        <div>
+            <input type="radio" name="a" id="third">
+            <label for="third">这里点文字也能选择</label>
+        </div>
+    </div>
+
+    <div class="checkbox">
+
+        <p>2.复选框测试：</p>
+
+        <div>
+            <input type="checkbox" name="b" id="cb1" checked>
+            <label for="cb1">复选框</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="b" id="cb2">
+            <label for="cb2">checkbox</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="b">
+            <label for="">name用于js数据传输</label>
+        </div>
+
+    </div>
+
+    <div class="upload">
+        <p>3.上传文件测试：</p>
+        
+        <div>
+            <input type="file">
+        </div>
+
+        <p>4.图片按钮测试：</p>
+        <div>
+            <input type="image" src="../IMG/026.png">
+        </div>
+
+        <p>5.隐藏按钮测试：</p>
+        <div>
+            <input type="hidden" value="给后端的信息">
+        </div>
+    </div>
+    
+</body>
+</html>

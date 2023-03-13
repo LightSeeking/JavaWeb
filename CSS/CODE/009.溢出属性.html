@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出属性</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/009.css">
+</head>
+<body>
+
+    <h3>1.溢出属性（容器的）</h3>
+    <ul>
+        <li>overflow:visible/hidden（隐藏）/scroll/auto（自动）/inherit;</li>
+        <li>visible:默认值，溢出内容会显示在元素之外；</li>
+        <li>hidden:溢出内容隐藏</li>
+        <li>scroll:滚动，溢出内容以滚动方式显示；</li>
+        <li>auto:如果有溢出会添加滚动条，没有溢出正常显示；</li>
+        <li>inherit:规定应该遵从父元素继承overflow属性的值。</li>
+        <li>overflow-x:X轴溢出&emsp;overflow-y:Y轴溢出</li>
+    </ul>
+
+    <h3>2.空余空间</h3>
+    <ul>
+        <li style="color: red;">white-space:normal/nowrap/pre/pre-wrap/pre-line/inherit该属性用来设置如何处理元素内的空白</li>
+        <li>normal:默认值，空白会被浏览器忽略</li>
+        <li>nowrap:文本不会换行，文本会在同一行上继续，知道遇到&lt;br/&gt;标签为止</li>
+        <li>pre标签:预格式化文本-保留空格，tab，回车；这里的pre和pre标签一样</li>
+        <li>
+            <pre style="font-size: large; font-weight: bold;">
+                nowrap:不换行
+                pre:显示空格，回车，不换行
+                pre-wrap:显示空格，回车，换行
+                pre-line:显示回车，不显示空格，换行
+            </pre>
+        </li>
+    </ul>
+    
+    <h3>3.省略号显示</h3>
+    <ul>
+        <li>text-overflow:clip/ellipsis</li>
+        <li>clip:默认值，不显示省略号</li>
+        <li>ellipsis:显示省略标记</li>
+    </ul>
+    <p style="color: red;">当单行文本溢出显示省略号需要同时设置以下声明：</p>
+    <ol>
+        <li>容器宽度:width:200px</li>
+        <li>强制文本在一行内显示:white-space:nowrap</li>
+        <li>溢出内容为隐藏:overflow:hidden</li>
+        <li>溢出文本显示省略号:text-overflow:ellipsis</li>
+    </ol>
+
+    <br>
+    <div class="rest">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro tenetur adipisci velit cupiditate omnis iure quod 
+        voluptas, dolore optio doloribus. Odio, praesentium nisi 
+        necessitatibus obcaecati ratione cupiditate sunt sit ipsa.
+    </div>
+
+    <br>
+    <pre>
+        pre标签：
+        预 格式化   文本-保留空格，tab，回车
+        比如如下代码：
+        .rest{
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </pre>
+
+    <br>
+
+
+    <div class="box" id="db1">
+        <p>(1)visible</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+    <div class="box" id="db2">
+        <p>(2)hidden</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+    <div class="box" id="db3">
+        <p>(3)scroll</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+    <div class="box" id="db4">
+        <p>(4)auto</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+    <div class="box" id="db5">
+        <p>(5)inherit</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+    <div class="box" id="db6">
+        <p>(6)overflow-x/overflow-y</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad porro et aut inventore quaerat, non autem omnis sint nisi fugiat, 
+        laboriosam magnam voluptas neque corporis consequatur molestias odit 
+        nostrum ut?
+    </div>
+
+
+</body>
+</html>

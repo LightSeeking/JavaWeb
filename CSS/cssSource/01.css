@@ -28,3 +28,7 @@ p{
 li a{
     color: black;
 }
+
+.new,.pic{
+    float: left;
+}

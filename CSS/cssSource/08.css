@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 5;
+}
+
+.head{
+    width: 600px;
+    height: 30px;
+    margin: 50px auto;
+    background-color: antiquewhite;
+}
+
+.list{
+    width: 198px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: STXingkai,KaiTi;
+    font-size: 18px;
+    float:left;
+    border-right: 2px solid rgb(21, 134, 254);
+}
+
+ul{
+    list-style: none;
+    display: none;
+}
+
+#video:hover .vd{
+    display: inline;
+}
+
+#exam:hover .ea{
+    display: inline;
+}
+
+.care{
+    font-size: large;
+    color: red;
+}
+

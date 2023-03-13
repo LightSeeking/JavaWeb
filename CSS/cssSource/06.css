@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    width: 235px;
+    height: 335px;
+    background-color:antiquewhite;
+    margin: 0 auto;
+    padding: 11px 11px 18px;
+}
+
+.title{
+    width: 241px;
+    height: 19px;
+    padding-left: 4px;
+    border-left: 2px solid #254282;
+    color: #254282;
+    line-height: 19px;
+    font-size: 14px;    
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.bigpic{
+    width: 241px;
+    height: 170px;
+    margin-bottom: 16px;
+}
+
+.bigpic img{
+    width: 241px;
+    height:auto;
+    /* img和p标签不属于同一个类型，会有缝隙 */
+    display: block;
+}
+
+.bigpic p{
+    width: 241px;
+    height: 26px;
+    color: burlywood;
+    font-family: STXingkai,KaiTi;
+    background-color: rgb(254, 232, 203);
+    font-size: 12px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.smallpic{
+    width: 241px;
+    height: 120px;
+}
+
+.smallpic .left{
+    float: left;
+}
+
+.smallpic .right{
+    float: right;
+}
+
+.smallpic img{
+    width: 112px;
+    height: 84px;
+    display: block;
+}
+
+.smallpic p{
+    font-size: 12px;
+    color: burlywood;
+    font-family: STXingkai,KaiTi;
+    width: 112px;
+    background-color: rgb(254, 232, 203);
+    text-align: center;
+    line-height: 18px;
+}
+

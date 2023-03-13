@@ -1,0 +1,11 @@
+
+.radio,.checkbox,.upload{
+    width: 100%;
+    height: auto;
+    background: grey;
+    color: white;
+}
+
+p{
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+.footer{
+    height: 206px;
+    border-top: 1px solid #cccccc;
+    background: url(../IMG/09.7.png);
+}
+
+.footer ul{
+    height: 84px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ecebeb;
+    line-height: 28px;
+}
+
+.footer ul li{
+    float:left;
+    width: 211px;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #336699;
+}
+
+.footer p{
+    height: 61px;
+    line-height: 61px;
+    padding-left: 30px;
+    font-size: 12px;
+}

@@ -1,0 +1,18 @@
+.nav{
+    height: 53px;
+    line-height: 53px;
+    border-top: 1px solid #657588;
+    background-color: #0c345c;
+    color: white;
+}
+
+.nav li{
+    float: left;
+    font-size: 16px;
+    margin-right: 76px;
+}
+
+.banner{
+    height: 379px;
+    background: url(../IMG/09.3.jpg) no-repeat center;
+}

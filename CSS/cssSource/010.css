@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    margin: 50px auto;
+    width: 900px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.box .head{
+    width: 900px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: rgb(49, 154, 245);
+    border-bottom: 1px dashed white;
+}
+
+.box .head p{
+    width: 900px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.box .left,.box .center{
+
+    width: 299px;
+    height: 300px;
+    border-right: 1px dashed white;
+    float: left;
+}
+
+.box .right{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.box .left .title,.box .center .title,.box .right .title{
+    width: 300px;
+    height: 32px;
+    background-color: rgb(49, 154, 245);
+    padding-top: 8px;
+}
+
+
+.box .left .title p,.box .center .title p,.box .right .title p{
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.box .left .main,.box .center .main,.box .right .main{
+    font-size: 17px;
+    text-align: justify;
+
+}
+
+.case{
+    width: 900px;
+    height: 30px;
+    border-top: 1px dashed white;
+}
+.case .left,.case .center,.case .right{
+    float: left;
+}
+
+
+.care{
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    clear: left;
+    text-align: justify;
+    background-color: bisque;
+}

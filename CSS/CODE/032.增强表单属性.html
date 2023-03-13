@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增强表单-属性</title>
+
+    <link rel="stylesheet" type="text/css" href="../cssSource/00.note.css">
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>1.autofocus属性</h3>
+        <p>给文本框、选择框、或者按钮加上该属性，当打开页面时，该控件自动获得国标焦点，一个页面只能有一个</p>
+
+        <h3>2.required属性</h3>
+        <p>验证输入不能为空</p>
+
+        <h3>3.Multiple:</h3>
+        <p>可以输入一个或者多个值，每个值之间用逗号分开</p>
+        <p>例如：&lt;input type="email" multiple/</p>
+        <p>还可以应用于file</p>
+
+        <h3>4.pattern</h3>
+        <p>将属性值设为某个格式的正则表达式，在提交时会检查其内容是否符合给格式</p>
+        <p>例如：&lt;input pattern = "[0-9][A-Z]{3} title="输入内容：一个数与三个大写字母" placeholder = '输入内容：一个数与三个大写字母'</p>
+    </div>
+
+    <div class="case">
+        <h3>案例演示</h3>
+
+        <form action="">
+            <div>
+                用户名：<input type="text" autofocus required pattern="[0-9][A-Z]{3}" title="输入内容：一个数与三个大写字母" 
+                placeholder = '输入内容：一个数与三个大写字母'>
+            </div>
+
+            <div>
+                邮箱：<input type="email" name="email" required multiple>
+            </div>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+    display: block;
+    width: 600px;
+    height: 300px;
+    line-height: 30px;
+    margin: 0 auto;
+    background: skyblue;
+}
+
+h3,h4,h5{
+    font-family: XingKai;
+    color: rgb(227, 133, 205);
+}
+
+div{
+    width: 103px;
+    height: 32px;
+    float: left;
+    background:url(../IMG/020.png);
+    margin: 10px;
+}
+
+.box1{
+    background-position: -205px -111px;
+}
+
+.box2{
+    background-position: -205px -74px;
+}
+
+.box3{
+    background-position: -205px -37px;
+}

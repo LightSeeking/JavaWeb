@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单和文本域和字段集</title>
+    <link rel="stylesheet" type="text/css" href="../cssSource/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../cssSource/027.css">
+</head>
+<body>
+
+    <div class="infro">
+        <h3>一、下拉菜单</h3>
+        <ul>
+            <li>select标签里面的option标签就是选项</li>
+            <li>select支持的属性：size是显示的选项数量，默认一个<span>是能看size个，选择还只能选一个</span><br>
+                mutiple，可以选多个,<span>要按住shift或ctrl键</span>
+            </li>
+            <li>option支持的属性：value是提供后端的需要用到的value值<br>
+                selected,要显示的值，默认是第一个选项
+            </li>
+        </ul>
+
+        <h3>二、文本域</h3>
+        <ul>
+            <li>&lt;textarea cols="30" rows="10"&gt;提前设置好的文本，可以接着写，也可以删掉&lt;/textarea&gt;</li>
+            <li>cols是可以输入的列数，row是可以输入的行数</li>
+            <li class="stress">一般使用css设置文本域的宽和高</li>
+            <li>placeholder可以设置预置文本</li>
+            <li>默认值value是写在双标签内部<span>这里的默认值不要随便换行，否则可能会给输入框预置一个换行符</span></li>
+            <li>在css中，可设置resize的值，避免文本域被随意放大缩小</li>
+        </ul>
+
+        <h3>三、字段集</h3>
+        <ul>
+            <li>&lt;fieldset&gt;&lt;legend&gt;缺口展示的内容&lt;/legend&gt;&lt;/fieldset&gt;</li>
+            <li>在fieldset里面，legend外面，写的是框里面的内容</li>
+            <li>可以使用css控制字段集的样式，对fieldset和legend都可以</li>
+        </ul>
+    </div>
+
+
+    <hr>
+
+    <div class="menu">
+
+        <div>下拉菜单演示：</div>
+        <select name="" id="" size="2" multiple>
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="javascript">javascript</option>
+            <option value="java" selected>java</option>
+            <option value="mysql">mysql</option>
+        </select>
+    </div>
+
+    <div class="textarea">
+
+        <div>文本域演示：</div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="请输入文本"></textarea>
+    </div>
+
+    <div class="fieldset">
+
+        <div>字段集演示：</div>
+
+        <fieldset>
+            <legend>使用legend打开缺口</legend>
+            <input type="radio" name="fs" id="man">
+            <label for="man">男</label>
+            <br>
+            <input type="radio" name="fs" id="woman">
+            <label for="woman">女</label>
+        </fieldset>
+    </div>
+    
+</body>
+</html>

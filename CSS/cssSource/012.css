@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.box1{
+    background-color: aqua;
+    position: static;
+    /* top:10px; */
+}
+
+.box2{
+    background-color: aquamarine;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.box3{
+    background-color:cadetblue;
+}
