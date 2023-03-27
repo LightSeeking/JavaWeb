@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目标伪类选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/04.css">
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>一、目标伪类选择器概述</h3>
+        <ul>
+            <li>E:target选择匹配E的所有元素，且匹配元素被相关URL指向</li>
+            <li>一般结合锚点使用</li>
+        </ul>
+    </div>
+
+    <div class="case">
+
+        <h3>二、目标伪类选择器演示</h3>
+
+        <ul>
+            <li>
+                <a href="#a">寻光合作</a>
+            </li>
+                
+            <li>
+                <a href="#b">寻光资讯</a>
+            </li>
+    
+            <li>
+                <a href="#c">企业信息</a>
+            </li>
+    
+            <li>
+                <a href="#d">资格认证</a>
+            </li>
+        </ul>
+    
+        <div id="a">寻光合作</div>
+        <div id="b">寻光资讯</div>
+        <div id="c">企业信息</div>
+        <div id="d">资格认证</div>
+    </div>
+
+    <h3>三、手风琴效果</h3>
+    <div>
+        <a href="#t1">文本1</a>
+        <div id="t1">
+            平生太湖上，短棹几经过。如今重到何事，愁与水云多？
+            拟把匣中长剑，换取扁舟一叶，归去老渔蓑。银艾非吾事，丘壑已蹉跎。
+        </div>
+    </div>
+
+    <div>
+        <a href="#t2">文本2</a>
+        <div id="t2">
+            脍新鲈，斟美酒，起悲歌。太平生长，岂谓今日识干戈。
+            欲泻三江雪浪，净洗胡尘千里，不用挽天河。回首望霄汉，双泪堕清波！
+        </div>
+    </div>
+
+    <div>
+        <a href="#t3">文本3</a>
+        <div id="t3">
+            茅檐低小，溪上青青草。醉里吴音相媚好，白发谁家翁媪？
+            大儿锄豆溪东，中儿正织鸡笼。最喜小儿亡赖，溪头卧剥莲蓬。(亡 同：无)
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体引入</title>
+
+    <link rel="stylesheet" type="text/css" href="../CODECSS/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CODECSS/10.css">
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>一、字体模块：@font-face</h3>
+        <ul>
+            <li>1.@font-face是CSS3中的一个模块，他主要是把自己定义的Web字体嵌入到你的网页中</li>
+            <li class="stress"><span>2.@font-face的语法规则：</span></li>
+            <li>
+                <pre>
+    @font-face{
+        font-family:&lt;YourWebFontName&gt;;
+        src:&lt;source&gt;[&lt;format&gt;][&lt;source&gt;][&lt;format&gt;]*;
+        [font-weight:&lt;weight&gt;];
+        [font-style:&lt;style&gt;];
+    }</pre>
+            </li>
+            <li class="stress">3.@font-face语法说明：</li>
+            <li>（1）YourWebFontName:此值值得就是你自定义的字体名称，最好是使用你下载的默认字体，
+                他将被引用到你的Web元素中的font-family。如“font-family:"YourWebFontName";”
+            </li>
+            <li>（2）source:此值指的是你自定义的字体的存放路径，可以是相对路径也可以是绝对路径</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>二、字体引入演示</h3>
+        <div class="text">寻光lightseeking</div>
+    </div>
+    
+</body>
+</html>

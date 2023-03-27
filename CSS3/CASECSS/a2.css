@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 955px;
+    height: 1420px;
+    
+    margin: 100px auto;
+    background-color: #f4f5f9;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* header设置 */
+header{
+    height: 124px;
+    background-color: #232939;
+    display: flex;
+    color: white;
+}
+
+header .iconfont{
+    width: 118px;
+    height: 124px;
+    line-height: 124px;
+    text-align: center;
+    font-size: 48px;
+}
+
+header .char{
+    height: 124px;
+    line-height: 124px;
+    flex:1;
+    font-size: 40px;
+}
+
+
+/* footer设置 */
+footer{
+    height: 128px;
+    background-color: white;
+    color: #acadaf;
+    display: flex;
+}
+
+footer > div{
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div:hover{
+    color: #06a9ee;
+}
+
+footer div .iconfont{
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 58px;
+}
+
+footer div .name{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+
+
+/* section设置 */
+section{
+    flex:1;
+}
+
+.main{
+    display: flex;
+    height: 278px;
+    background-color: #242a3a;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main div{
+    width: 120px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.main div .iconfont{
+    font-size: 110px;
+    text-align: center;
+}
+
+.main div .name{
+    font-size: 32px;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+.list div{
+    width: 25%;
+    height: 208px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list div .iconfont{
+    height: 77px;
+    line-height: 77px;
+    text-align: center;
+    font-size: 55px;
+    color: rgb(60, 157, 218);
+}
+
+.list div .name{
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pic{
+    height: 215px;
+    margin-top: 25px;
+    background-image: url(../IMG/a2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

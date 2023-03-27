@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js的书写位置</title>
+    <link rel="stylesheet" type="text/css" href="../css/00.note.css">
+
+    <!-- <script>
+        alert="内嵌式JS代码"
+    </script> -->
+
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>一、行内式JS代码</h3>
+        <ul>
+            <li>1.a标签书写js代码，写在href属性上</li>
+            <li>&lt;a href="javascript: JS代码 "&gt;&lt;/a&gt;</li>
+            <li>2.非a标签的行内js，写再行为属性上&lt;div js代码&gt;&lt;/div&gt;</li>
+        </ul>
+        <h3>二、内嵌式JS代码</h3>
+        <ul>
+            <li>内嵌式就是把js代码书写在一个script标签对内</li>
+        </ul>
+        
+        <h3>三、外链式JS代码</h3>
+        <ul>
+            <li>把代码书写在一个.js文件内</li>
+            <li>&lt;script src=""&gt;&lt;/script&gt;</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>四、JS演示</h3>
+        <a href="javascript:alert('a标签的行内js')">a标签的行内js</a>
+        <div onclick="alert('非a标签的行内js')">点击：非a标签的行内js</div>
+    </div>
+
+</body>
+</html>

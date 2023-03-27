@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+    <link rel="stylesheet" type="text/css" href="../css/00.note.css">
+    <script src="../js/04.js"></script>
+</head>
+<body>
+
+    <div class="infro">
+        <h3>一、函数</h3>
+        <ul>
+            <li>1.函数定义阶段：把代码装进“盒子”里面</li>
+            <li>2.函数调用阶段：把“盒子”里面的代码执行</li>
+            <li>3.定义语法：
+<pre>
+function 函数名(形参){
+    函数体
+    return 返回值
+}
+</pre>
+            </li>
+            <li>4.调用语法：函数名(实参)</li>
+            <li>5.函数的返回值：使用return</li>
+        </ul>
+
+        <h3>二、递归函数</h3>
+        <ul>
+            <li>PS:要设置一个出口</li>
+        </ul>
+
+        <h3>三、作用域</h3>
+        <ul>
+            <li>一个变量可以在什么范围内使用</li>
+            <li class="stress">1.范围：全局作用域，私有作用域</li>
+            <li>
+                (1)全局作用域：一个页面就是一个全局作用域<br>
+                (2)私有作用域：只有函数 生成自由作用域
+            </li>
+
+            <li class="stress">2.使用：定义，访问，赋值</li>
+            <li>
+                (1)定义：声明在什么位置的变量就是哪一个作用域的变量<br>
+                (2)访问:自己有的用自己的，自己没有就用父级的，到全局都没有就会报错<br>
+                (3)赋值:自己有给自己的赋值，自己没有给父级赋值，到全局都没有，会定义一个全局再赋值
+            </li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>

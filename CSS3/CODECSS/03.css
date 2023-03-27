@@ -1,0 +1,7 @@
+.case ul li:last-child{
+    background-color: bisque;
+}
+
+.case ul li:nth-child(odd){
+    background-color: burlywood;
+}

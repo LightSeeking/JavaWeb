@@ -1,0 +1,36 @@
+.case [class^="box"]{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.case .box1{
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    border: 10px solid gold;
+    box-sizing: border-box;
+}
+
+.case .box2{
+    background-color: lightsalmon;
+    padding: 30px;
+    border: 10px solid salmon;
+    box-sizing: content-box;
+}
+
+.case .content{
+    width: 900px;
+    height: 100px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.case .content div{
+    width: 300px;
+    height: 100px;
+    float: left;
+    text-align: justify;
+    padding: 10px;
+    border: 2px solid lightsteelblue;
+    box-sizing: border-box;
+}

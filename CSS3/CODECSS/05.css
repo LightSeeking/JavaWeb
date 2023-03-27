@@ -1,0 +1,25 @@
+input:enabled{
+    background-color: lightcyan;
+}
+
+input:disabled{
+    background-color: lightgoldenrodyellow;
+}
+
+input:focus{
+    background-color: aliceblue;
+}
+
+input[type=checkbox]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.case p::selection{
+    background-color: lightpink;
+    color: aliceblue;
+}
+
+

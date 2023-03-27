@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI元素状态伪类选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/05.css">
+</head>
+<body>
+
+    <div class="infro">
+        <h3>一、UI元素状态伪类选择器概述</h3>
+        <ul>
+            <li>E:enabled匹配所有用户界面（form表单）中处于可用状态的E元素</li>
+            <li>E:disabled匹配所有用户界面（form表单）中处于不可用状态的E元素</li>
+            <li>E:checked匹配所有用户界面（form表单）中处于选中状态的E元素
+                <span>一般用于checkbox，不过先appearance: none;清除默认样式</span>
+            </li>
+            <li>E:focus聚焦时会匹配此选择器</li>
+            <li>E::selection匹配E元素中被用户选中或处于高亮状态的部分
+                <span>一般用于文本的选取效果</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>二、UI元素状态伪类选择器演示</h3>
+
+        <form action="">
+            用户名<input type="text"> <br>
+            密码<input type="password"> <br>
+            记住用户名及密码<input type="checkbox"> <br>
+            <input type="submit" disabled>
+        </form>
+
+        <p>
+            志在烟霞慕隐沦，功成归看五湖春。一叶舟中吟复醉，云水。此时方识自由身。
+            花岛为邻鸥作侣，深处。经年不见市朝人。已得希夷微妙旨，潜喜。荷衣蕙带绝纤尘。
+        </p>
+
+    </div>
+    
+</body>
+</html>

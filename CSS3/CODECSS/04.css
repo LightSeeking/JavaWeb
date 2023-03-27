@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.case ul{
+    list-style: none;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+}
+
+.case li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.case div{
+    height: 600px;
+    border: 3px solid #ccc;
+}
+
+a{
+    text-decoration: none;
+}
+
+.case div:target{
+    background-color: beige;
+}
+
+div[id^=t]{
+    display: none;
+}
+
+div[id]:target{
+    display: block;
+}
+

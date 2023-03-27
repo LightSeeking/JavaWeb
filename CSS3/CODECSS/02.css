@@ -1,0 +1,11 @@
+div[class]{
+    background-color: bisque;
+}
+
+div[class=box1]{
+    border: 2px solid black;
+}
+
+input[name]{
+    background-color: rgb(204, 229, 244);
+}

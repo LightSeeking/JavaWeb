@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.infro{
+    width: 100%;
+    height: auto;
+}
+
+h3{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    background-color: skyblue;
+    color: white;
+    font-weight: bolder;
+}
+
+ul{
+    list-style: none;
+}
+
+.infro ul .stress{
+    font-weight: bolder;
+}
+
+pre{
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+}
+
+.infro ul li span{
+    font-weight: bold;
+    color: red;
+}

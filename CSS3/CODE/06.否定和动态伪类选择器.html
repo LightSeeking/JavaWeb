@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>否定和动态伪类选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/06.css">
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>一、否定和动态伪类选择器概述</h3>
+        <ul>
+            <li class="stress">1.否定伪类选择器</li>
+            <li>E:not(s)（IE6-8浏览器不支持:not()选择器）</li>
+            <li>匹配所有不匹配简单选择符s的元素E</li>
+            <li>
+                <p><strong>案例分析：</strong></p>
+                <pre>
+.case ul li:not(:first-child){
+    background-color: lightcyan;
+}
+                </pre>
+            </li>
+            <li class="stress">2.动态伪类选择器</li>
+            <li>E:link</li>
+            <li>链接伪类选择器</li>
+            <li>选择匹配的E元素，而且匹配元素被定义了超链接并未被访问过。常用于链接锚点上</li>
+            <li>E:visited</li>
+            <li>链接伪类选择器</li>
+            <li>选择匹配的E元素，而且匹配元素被定义了超链接并已被访问过。常用于链接锚点上</li>
+            <li>E:active</li>
+            <li>用户行为选择器</li>
+            <li>选择匹配的E元素，且匹配元素被激活。常用于链接锚点和按钮上</li>
+            <li>E:hover</li>
+            <li>用户行为选择器</li>
+            <li>选择匹配的E元素，且用户鼠标停留在元素E之上。IE6及以下浏览器仅支持a:hover</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>二、否定和动态伪类选择器演示</h3>
+        <ul>
+            <li>li1</li>
+            <li>li2</li>
+            <li>li3</li>
+        </ul>
+    </div>
+</body>
+</html>

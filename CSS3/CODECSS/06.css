@@ -1,0 +1,3 @@
+.case ul li:not(:first-child){
+    background-color: lightcyan;
+}

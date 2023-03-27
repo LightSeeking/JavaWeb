@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/03.css">
+</head>
+<body>
+
+    <div class="infro">
+        <h3>一、结构伪类选择器概述</h3>
+        <ul>
+            <li class="stress">1.结构性伪类选择器</li>
+            <li>X:first-child匹配子集的第一个元素，IE7就可以支持</li>
+            <li>X:last-child匹配父元素中最后一个X元素</li>
+            <li>X:nth-child(n)用于匹配索引值为n的子元素，索引值从1开始
+                <span>里面填even表示索引值为偶数的，odd为奇数</span>
+            </li>
+            <li>X:only-child这个伪类一般用的比较少，比如上述代码匹配的是div下
+                有且仅有一个的p，也就是说，如果div内有多个p，将不匹配</li>
+            <li>X:root匹配文档的根元素，在HTML（标准通用标记语言下的一个应用）中，根元素永远是HTML
+                <span>:root可以用来表示html</span>
+            </li>
+            <li>X:empty匹配没有任何子元素（包括包含文本）的元素X
+                <span>空格和回车符都算是子元素</span>
+            </li>
+            <li>
+                <p><strong>案例分析：</strong></p>
+                <pre>
+.case ul li:nth-child(odd){
+    background-color: burlywood;
+}
+                </pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>二、结构伪类选择器演示</h3>
+
+        <ul>
+            <li>t1</li>
+            <li>t2</li>
+            <li>t3</li>
+            <li>t4</li>
+            <li>t5</li>
+            <li>t6</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

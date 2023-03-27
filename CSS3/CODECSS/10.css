@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: lightseeking;
+    src: url(../FontFamliy/YanShiYouRanXiaoKai-2.ttf);
+}
+
+.case .text{
+    height: 50px;
+    width: 300px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-family: lightseeking;
+    font-size: 40px;
+    font-weight: bold;
+    color: pink;
+    text-shadow: 5px 0px 0px #ccc;
+}

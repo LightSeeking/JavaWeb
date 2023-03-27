@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪异盒模型</title>
+    <link rel="stylesheet" type="text/css" href="../CODECSS/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CODECSS/11.css">
+</head>
+<body>
+
+    <div class="infro">
+        <h3>一、怪异盒模型概述</h3>
+        <ul>
+            <li>含义：更改原有布局盒子模型的计算方式通过box-sizing数学的取值进行更改</li>
+            <li class="stress">1.属性：box-sizing</li>
+            <li>box-sizing属性允许您以特定的方式定义匹配某个区域的特点元素</li>
+            <li class="stress">2.属性值：content-box</li>
+            <li>这是CSS2.1规定的宽度高度行为，宽度和高度分别应用到元素的内容框。在宽度和高度之外绘制元素的内边距和边框</li>
+            <li class="stress">3.属性值：boder-box</li>
+            <li>为元素设定的宽度和高度决定了元素的边框盒</li>
+            <li>就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
+                通过从设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
+            </li>
+        </ul>
+    </div>
+    
+    <div class="case">
+        <h3>二、怪异盒模型演示</h3>
+        <div class="box1">box-sizing:content-box;这是标准盒模型，默认</div>
+        <div class="box2">box-sizing:boder-box;怪异盒模型</div>
+        <h3>三、怪异盒模型的使用场景</h3>
+
+        <div class="content">
+            <div class="left">
+                月洗高梧，露漙幽草，宝钗楼外秋深。土花沿翠，萤火坠墙阴。
+                静听寒声断续，微韵转、凄咽悲沉。争求侣，殷勤劝织，促破晓机心。
+            </div>
+
+            <div class="center">
+                儿时，曾记得，呼灯灌穴，敛步随音。任满身花影，犹自追寻。
+                携向华堂戏斗，亭台小、笼巧妆金。今休说，从渠床下，凉夜伴孤吟。
+            </div>
+
+            <div class="right">
+                百亩中庭半是苔。门前白道水萦回。爱闲能有几人来。
+                小院回廊春寂寂，山桃溪杏两三栽。为谁零落为谁开。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

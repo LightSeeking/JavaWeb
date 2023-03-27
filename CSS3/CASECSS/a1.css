@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    outline: none;
+}
+
+div{
+    width: 935px;
+    height: 120px;
+    margin: 100px auto;
+    border: 1px solid #dedede;
+    background-color: #eceaeb;
+    border-radius: 15px;
+    box-shadow: 4px 11px 7px #bfbfbf,-4px 11px 7px #bfbfbf;
+}
+
+[type=text]{
+    width: 683px;
+    height: 86px;
+    margin: 17px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 25px;
+    /* 文字缩进 */
+    text-indent: 11px;
+}
+
+[type=button]{
+    width: 200px;
+    height: 83px;
+    border-radius: 5px;
+    background-image: url(../IMG/a1.png);
+    border: 1px solid #5ca3b4;
+    font-size: 23px;
+    color: white;
+}

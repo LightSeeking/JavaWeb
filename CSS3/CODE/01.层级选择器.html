@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层级选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/01.css">
+</head>
+<body>
+    
+    <div class="infro">
+        <h3>一、层级选择器概述</h3>
+        <ul>
+            <li>避免了取class名，更精准选择元素</li>
+            <li>子代选择器：father>son{}</li>
+            <li>.menu+li{}：表示选择.menu元素后面的第一个兄弟</li>
+            <li>.menu~li{}：表示选择.menu元素后面的所以的亲兄弟</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>二、层级选择器演示</h3>
+        <ul class="box">
+            <li class="menu">
+                <p>第一级第一个</p>
+                <ul class="kid">
+                    <li>第二级第一个</li>
+                    <li>第二级第二个</li>
+                    <li>第二级第三个</li>
+                </ul>
+            </li>
+            <li>第一级第二个</li>
+            <li>第一级第三个</li>
+        </ul>
+    </div>
+</body>
+</html>

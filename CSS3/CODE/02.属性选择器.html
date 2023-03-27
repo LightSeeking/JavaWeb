@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/00.note.css">
+    <link rel="stylesheet" type="text/css" href="../CSSSOURCE/02.css">
+</head>
+<body>
+
+    <div class="infro">
+
+        <h3>一、属性选择器概述</h3>
+        <ul>
+            <li>1.E[atrr]:只使用属性名，但没有确定任何属性值；</li>
+            <li>2.E[attr="value"]:指定属性名，并指定了该属性的属性值；</li>
+            <li>3.E[attr~="value"]:指定属性名，并且具有属性值，此属性是一个词列表，并且
+                以空格隔开，其中此列表中包含了一个value词，而且等号前面的"~"不能不行。
+            </li>
+            <li class="stress">扩展知识</li>
+            <li>4.E[attr^="value"]:指定了属性名，并且有属性值，属性值是以value开头的；</li>
+            <li>5.E[attr$="value"]:指定了属性名，并且有属性值，属性值是以value结束的；</li>
+            <li>6.E[attr*="value"]:指定了属性名，并且有属性值，属性值中包含了value；</li>
+            <li class="stress">实例分析</li>
+            <li>
+                <pre>
+div[class]{
+    background-color: bisque;
+}
+                </pre>
+                表示选择带有class属性的div
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>二、属性选择器演示</h3>
+        <div class="box1">div1</div>
+        <div class="box2">div2</div>
+        <div class="box1 box2">div3</div>
+        <p class="p1">div1</p>
+        <p class="p2">div2</p>
+        <p>p3</p>
+    </div>
+    <hr>
+
+    <h2>注册页面</h2>
+    <div>
+        <label for="name">用户名</label>
+        <input type="text" name="username" id="name" autofocus>
+    </div>
+
+    <div>
+        <label for="password">密码</label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <div>
+        <label for="age">年龄</label>
+        <input type="number" name="age" id="age" min="0" max="150">
+    </div>
+
+    <div>
+        <label for="email">邮箱</label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <input type="submit">
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+{
+  "id": "3959118",
+  "name": "lightseeking",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16616101",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "16616259",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "16617390",
+      "name": "scan",
+      "font_class": "scan",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "16617400",
+      "name": "pay",
+      "font_class": "pay",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "16617414",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "16617548",
+      "name": "pay_collect",
+      "font_class": "pay_collect",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "16617885",
+      "name": "account book",
+      "font_class": "accountbook",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "16617890",
+      "name": "bank card",
+      "font_class": "bankcard",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "16617893",
+      "name": "bar chart",
+      "font_class": "barchart",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "16617911",
+      "name": "bill",
+      "font_class": "bill",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "16617921",
+      "name": "bulletin",
+      "font_class": "bulletin",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "16617975",
+      "name": "bus",
+      "font_class": "bus",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "16617982",
+      "name": "calculator",
+      "font_class": "calculator",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "16617984",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "16617994",
+      "name": "chat_add",
+      "font_class": "chat_add",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "16618578",
+      "name": "address book",
+      "font_class": "addressbook",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "16619405",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    }
+  ]
+}

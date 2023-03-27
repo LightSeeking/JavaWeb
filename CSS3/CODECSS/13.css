@@ -1,0 +1,45 @@
+.box{
+    width: 500px;
+    height: 500px;
+    border: 2px solid lightskyblue;
+    margin: 100px auto;
+    display: flex;
+    /* 修改主轴方向 */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;   
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+}
+
+.box div{
+    /* width: 100px; */
+    /* height: 100px; */
+    border: 1px dashed lightpink;
+    /* 水平垂直居中 */
+    /* margin: auto; */
+    box-sizing: border-box;
+}
+
+.div1{
+    align-self: start;
+}
+
+.div2{
+    align-self: flex-end;
+    flex: 1;
+}
+
+.case .box :nth-child(3){
+    align-self: center;
+    order: 1;
+}
+
+.div4{
+    align-self: baseline;
+}
+
+.div5{
+    align-self: stretch;
+    order: -1;
+}

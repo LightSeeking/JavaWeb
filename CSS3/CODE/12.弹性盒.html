@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒</title>
+    <link rel="stylesheet" type="text/css" href="../CODECSS/12.css">
+    <link rel="stylesheet" type="text/css" href="../CODECSS/00.note.css">
+</head>
+
+<body>
+
+    <div class="infro">
+        <h3>一、弹性盒概述</h3>
+        <ul>
+            <li class="stress">1.基本使用</li>
+            <li>是一种新的布局方式，<span>特别适合移动端布局</span> </li>
+            <li>在父盒子中使用<span>display:flex;</span>能让子元素默认横向排列</li>
+            <li>使用之后，<span>行内元素会变成块级元素</span></li>
+            <li>使用margin:auto;即可实现水平垂直居中</li>
+            <li class="stress">2.修改主轴方向</li>
+            <li>默认情况下，主轴是横向排列，侧轴是竖直方向</li>
+            <li>在父盒子中使用<span>flex-direction:属性值;</span>即可<br>
+                <span>row是水平，column是竖直，row-reverse是水平反向，column-reverse是竖直反向</span>
+            </li>
+            <li class="stress">3.调整主轴对齐方式</li>
+            <li>在父盒子中使用<span>justify-content:属性值;</span></li>
+            <li><span>flex-start是默认首对齐，flex-end是尾对齐，center是居中，
+                space-between是两端对齐，space-around是距离环绕</span>
+            </li>
+            <li class="stress">4.调整侧轴对齐方式</li>
+            <li>在父盒子中使用<span>align-items</span>:属性值;</li>
+            <li><span>flex-start是默认首对齐，flex-end是尾对齐，center是居中</span></li>
+            <li class="stress">PS:明显主轴和侧轴可形成一个直角坐标系
+                <br>
+                <span>使用步骤：先设主轴方向，在调主轴对齐，再调侧轴对齐</span>
+            </li>
+        </ul>
+
+        <h3>二、弹性盒进阶——折行与行间距</h3>
+        <ul>
+            <li>1.折行：flex-wrap:wrap;</li>
+            <li>2.行间距：align-content:flex-start;</li>
+            <li>取值有:flex-start,flex-end,center,space-between,space-around</li>
+        </ul>
+    </div>
+
+    <div class="case">
+
+        <h3>三、弹性盒演示</h3>
+
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
